@@ -189,7 +189,6 @@ img {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: 414px 271px; */
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
@@ -227,6 +226,7 @@ img {
   padding: 17px 0;
   background-color: var(--btn-color);
   padding-left: 48px;
+  transition: background-color 0.4s ease;
 }
 
 .hero__link:hover{
@@ -399,6 +399,7 @@ img {
 .footer__svg {
   fill: var(--white-color);
   display: block;
+  transition: fill 0.4s ease;
 }
 
 .footer__svg:hover{
@@ -560,6 +561,17 @@ img {
   display: block;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .hero-container::before {
+    background-image: url('../img/hero@2x.jpg');
+  }
+}
+
 /* MEDIA700 */
 @media only screen and (min-width: 700px) {
   .container{
@@ -647,7 +659,7 @@ img {
     bottom: 0;
     left: 0;
     padding: 56px 58px 0 0; 
-    background-color: var(--white-color);
+    background-color: #fafafa;
   }
   
   .hero__heading {
@@ -861,7 +873,7 @@ img {
     bottom: 0;
     left: 0;
     padding: 56px 55px 0 0; 
-    background-color: var(--white-color);
+    background-color: #fafafa;
   }
   
   .hero__heading {
