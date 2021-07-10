@@ -257,10 +257,12 @@ img {
   padding-bottom: 115px;
 
 }
+
 .aboutme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .aboutme__img {
@@ -268,7 +270,7 @@ img {
 }
 
 .aboutme__box {
-  width: 100%;
+  width: 311px;
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   margin-top: 32px;
@@ -280,6 +282,7 @@ img {
   margin: 0;
   font-family: var(--ibarra-font);
   font-weight: bold;
+  text-align: left;
   font-size: 40px;
   line-height: 42px;
   letter-spacing: -0.35px;
